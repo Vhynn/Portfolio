@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Galleries from "./components/Galleries";
+import Grid2 from "@mui/material/Unstable_Grid2";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Grid2 container spacing={0}>
+        <Grid2 xs={9} height="100vh" overflow="scroll">
+          <Galleries />
+        </Grid2>
+        <Grid2 xs={3}>
+          <AboutMe />
+        </Grid2>
+      </Grid2>
     </div>
   );
 }
