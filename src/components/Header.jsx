@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <React.Fragment>
       <AppBar position="static">
-        <Toolbar>Portfolio</Toolbar>
+        <Toolbar>do something here, a cool banner photo etc. </Toolbar>
       </AppBar>
     </React.Fragment>
   );

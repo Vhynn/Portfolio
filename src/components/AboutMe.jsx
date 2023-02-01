@@ -15,9 +15,11 @@ export default function AboutMe() {
         "& .MuiPaper-root": {
           position: "sticky",
         },
+        height: "100vh",
       }}
     >
       <Paper
+        square={true}
         sx={{
           padding: 4,
         }}
@@ -30,9 +32,11 @@ export default function AboutMe() {
         />
       </Paper>
       <Paper
+        square={true}
         sx={{
           padding: 4,
           letterSpacing: 2,
+          height: "100vh",
         }}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
