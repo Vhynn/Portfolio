@@ -22,30 +22,38 @@ export default function AboutMe() {
         square={true}
         sx={{
           padding: 4,
+          paddingBottom: 0,
         }}
       >
         <img
-          src="https://www.akc.org/wp-content/uploads/2017/11/Borzoi-running-outdoors.jpg"
-          alt="Dog"
-          width={250}
-          height={200}
+          src={require("./images/DonovanAndFlowers.jpeg")}
+          alt="Donovan and flowers"
+          width={"75%"}
+          height={"100%"}
         />
       </Paper>
       <Paper
         square={true}
         sx={{
-          padding: 4,
+          padding: 6,
+          paddingTop: 1,
+          paddingBottom: 0,
           letterSpacing: 2,
+          fontSize: "small",
           height: "100vh",
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        <h4 padding={0}>About Me</h4>
+        <p>Hi, I'm Donovan, I like to make things. </p>
+        <p>
+          This is a website made by me to show some of the things I've done.
+          Mostly I've just painted miniatures and made dioramas but I've slowly
+          been branching out into more things lately. Right now you can see
+          pictures of some of the projects I've finished as well as photos I've
+          taken and enjoy, though I'm by no means a talented photographer. I
+          plan on keeping this site updated as I work on more projects so feel
+          free to check back if you're interested and thanks for stopping by!
+        </p>
       </Paper>
     </Drawer>
   );
