@@ -52,7 +52,7 @@ export default function AboutMe() {
           pictures of some of the projects I've finished as well as photos I've
           taken and enjoy, though I'm by no means a talented photographer. I
           plan on keeping this site updated as I work on more projects so feel
-          free to check back if you're interested and thanks for stopping by!
+          free to check back if you're interested, and thanks for stopping by!
         </p>
       </Paper>
     </Drawer>

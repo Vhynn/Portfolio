@@ -9,6 +9,9 @@ const lightTheme = createTheme({
     secondary: {
       main: "#7d71ff",
     },
+    background: {
+      paper: "#efe6d5",
+    },
   },
 });
 
