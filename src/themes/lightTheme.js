@@ -4,13 +4,13 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#5075d0",
+      main: "#204396",
     },
     secondary: {
       main: "#7d71ff",
     },
     background: {
-      paper: "#efe6d5",
+      paper: "#EFECE9",
     },
   },
 });

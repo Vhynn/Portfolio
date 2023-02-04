@@ -1,4 +1,5 @@
-import { Drawer, Paper } from "@mui/material";
+import { Box, Drawer, Paper } from "@mui/material";
+import { textAlign } from "@mui/system";
 
 export default function AboutMe() {
   return (
@@ -21,15 +22,23 @@ export default function AboutMe() {
       <Paper
         square={true}
         sx={{
-          padding: 4,
+          paddingLeft: 1,
           paddingBottom: 0,
+          paddingRight: 1,
+          paddingTop: 0.5,
         }}
       >
+        <Box sx={{ paddingLeft: 5.3 }}>
+          <h2 align="left"> HI, I'M DONOVAN</h2>
+        </Box>
         <img
           src={require("./images/DonovanAndFlowers.jpeg")}
           alt="Donovan and flowers"
-          width={"75%"}
-          height={"100%"}
+          style={{
+            maxWidth: "257px",
+            height: "auto",
+            width: "100%",
+          }}
         />
       </Paper>
       <Paper
@@ -43,17 +52,19 @@ export default function AboutMe() {
           height: "100vh",
         }}
       >
-        <h4 padding={0}>About Me</h4>
-        <p>Hi, I'm Donovan, I like to make things. </p>
-        <p>
-          This is a website made by me to show some of the things I've done.
-          Mostly I've just painted miniatures and made dioramas but I've slowly
-          been branching out into more things lately. Right now you can see
-          pictures of some of the projects I've finished as well as photos I've
-          taken and enjoy, though I'm by no means a talented photographer. I
-          plan on keeping this site updated as I work on more projects so feel
-          free to check back if you're interested, and thanks for stopping by!
-        </p>
+        <h3 align="left">I LIKE TO MAKE THINGS. </h3>
+        <div align="left">
+          <p width="50%">
+            This is a website made by me to show some of the things I've done.
+            Mostly I've just painted miniatures and made dioramas but I've
+            slowly been branching out into more things lately. Right now you can
+            see pictures of some of the projects I've finished as well as photos
+            I've taken and enjoy, though I'm by no means a talented
+            photographer. I plan on keeping this site updated as I work on more
+            projects so feel free to check back if you're interested, and thanks
+            for stopping by!
+          </p>
+        </div>
       </Paper>
     </Drawer>
   );

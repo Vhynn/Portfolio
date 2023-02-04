@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={darkTheme}>
         <Fragment>
-          <Grid2 container spacing={0}>
+          <Grid2 container spacing={0} sx={{ backgroundColor: "#EFECE9" }}>
             <Grid2 xs={9} height="100vh" overflow="scroll">
               <Galleries />
             </Grid2>

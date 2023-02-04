@@ -66,12 +66,28 @@ export default function GalleryTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Dioramas" {...a11yProps(0)} />
-          <Tab label="Necrons" {...a11yProps(1)} />
-          <Tab label="Spaceships" {...a11yProps(2)} />
-          <Tab label="Other Miniatures" {...a11yProps(3)} />
-          <Tab label="Other Projects" {...a11yProps(4)} />
-          <Tab label="Photography" {...a11yProps(5)} />
+          <Tab sx={{ fontWeight: "bold" }} label="Dioramas" {...a11yProps(0)} />
+          <Tab sx={{ fontWeight: "bold" }} label="Necrons" {...a11yProps(1)} />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="Spaceships"
+            {...a11yProps(2)}
+          />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="Other Miniatures"
+            {...a11yProps(3)}
+          />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="Other Projects"
+            {...a11yProps(4)}
+          />
+          <Tab
+            sx={{ fontWeight: "bold" }}
+            label="Photography"
+            {...a11yProps(5)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} dir={theme.direction}>
