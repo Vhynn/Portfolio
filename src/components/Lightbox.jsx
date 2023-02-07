@@ -4,15 +4,20 @@ import FsLightbox from "fslightbox-react";
 function Lightbox({ pictures }) {
   const [toggler, setToggler] = useState(false);
 
+  let imgArr = [pictures.images.length];
+  for (let i = 0; i < pictures.images.length; i++) {
+    imgArr[i] = pictures.images[i].img;
+  }
+
   return (
     <>
       <img
-        src={pictures[0]}
-        alt=""
+        src={pictures.images[0].img}
+        alt={pictures.images[0].alt}
         onClick={() => setToggler(!toggler)}
         width="100%"
       />
-      <FsLightbox toggler={toggler} sources={pictures} />
+      <FsLightbox toggler={toggler} sources={imgArr} />
     </>
   );
 }

@@ -1,5 +1,4 @@
 import { Box, Drawer, Paper } from "@mui/material";
-import { textAlign } from "@mui/system";
 
 export default function AboutMe() {
   return (
