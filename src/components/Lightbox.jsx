@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FsLightbox from "fslightbox-react";
+import "./LightboxStyle.css";
 
 function Lightbox({ pictures }) {
   const [toggler, setToggler] = useState(false);
@@ -16,6 +17,7 @@ function Lightbox({ pictures }) {
         alt={pictures.images[0].alt}
         onClick={() => setToggler(!toggler)}
         width="100%"
+        className="zoomHover"
       />
       <FsLightbox toggler={toggler} sources={imgArr} />
     </>

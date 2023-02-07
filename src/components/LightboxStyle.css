@@ -1,0 +1,8 @@
+.zoomHover {
+  transition: all 0.5s;
+}
+
+.zoomHover:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
