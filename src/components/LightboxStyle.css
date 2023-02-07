@@ -1,8 +1,10 @@
 .zoomHover {
   transition: all 0.5s;
+  opacity: 0.85;
 }
 
 .zoomHover:hover {
   transform: scale(1.05);
   cursor: pointer;
+  opacity: 1;
 }
