@@ -10,6 +10,12 @@ function Lightbox({ pictures }) {
     imgArr[i] = pictures.images[i].img;
   }
 
+  let lbClass = "";
+
+  if (window.screen.width >= 1280) {
+    lbClass = "zoomHover";
+  }
+
   return (
     <>
       <img
@@ -17,9 +23,9 @@ function Lightbox({ pictures }) {
         alt={pictures.images[0].alt}
         onClick={() => setToggler(!toggler)}
         width="100%"
-        className="zoomHover"
+        className={lbClass}
       />
-      <FsLightbox toggler={toggler} sources={imgArr} />
+      <FsLightbox toggler={toggler} sources={imgArr} thumbs={null} />
     </>
   );
 }

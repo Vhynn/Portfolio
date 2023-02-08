@@ -1,5 +1,34 @@
 import { Box, Drawer, Paper } from "@mui/material";
 
+const DonovanImage = () => {
+  if (window.screen.width <= 1280) {
+    return (
+      <img
+        src={require("./images/DonovanAndFlowers.jpeg")}
+        alt="Donovan and flowers"
+        style={{
+          maxWidth: "257px",
+          height: "auto",
+          width: "100%",
+          marginLeft: "10%",
+        }}
+      />
+    );
+  } else {
+    return (
+      <img
+        src={require("./images/DonovanAndFlowers.jpeg")}
+        alt="Donovan and flowers"
+        style={{
+          maxWidth: "257px",
+          height: "auto",
+          width: "100%",
+        }}
+      />
+    );
+  }
+};
+
 export default function AboutMe() {
   return (
     <Drawer
@@ -16,6 +45,7 @@ export default function AboutMe() {
           position: "sticky",
         },
         height: "100vh",
+        maxWidth: "80vw",
       }}
     >
       <Paper
@@ -30,15 +60,7 @@ export default function AboutMe() {
         <Box sx={{ paddingLeft: 5.3 }}>
           <h2 align="left"> HI, I'M DONOVAN</h2>
         </Box>
-        <img
-          src={require("./images/DonovanAndFlowers.jpeg")}
-          alt="Donovan and flowers"
-          style={{
-            maxWidth: "257px",
-            height: "auto",
-            width: "100%",
-          }}
-        />
+        <DonovanImage />
       </Paper>
       <Paper
         square={true}

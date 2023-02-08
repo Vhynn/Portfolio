@@ -1,10 +1,13 @@
 .zoomHover {
   transition: all 0.5s;
   opacity: 0.85;
+    /* -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 90%);
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 90%); */
 }
 
 .zoomHover:hover {
   transform: scale(1.05);
   cursor: pointer;
   opacity: 1;
+  /* mask-image: none; */
 }
