@@ -19,7 +19,7 @@ function Lightbox({ pictures }) {
   return (
     <>
       <img
-        src={pictures.images[0].img}
+        src={pictures.display}
         alt={pictures.images[0].alt}
         onClick={() => setToggler(!toggler)}
         width="100%"

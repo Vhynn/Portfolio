@@ -2,7 +2,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import Lightbox from "./Lightbox";
-import { useState } from "react";
 
 export default function Gallery({ galleryProp }) {
   let cols = 3;
