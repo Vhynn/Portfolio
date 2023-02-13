@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
-    "fslightbox-react": "^1.6.3",
+    "fslightbox-react": "file:src/lib/fslightbox-react-pro-1.5.3.tgz",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",

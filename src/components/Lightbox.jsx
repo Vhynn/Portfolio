@@ -10,6 +10,11 @@ function Lightbox({ pictures }) {
     imgArr[i] = pictures.images[i].img;
   }
 
+  let capArr = [pictures.images.length];
+  for (let i = 0; i < pictures.images.length; i++) {
+    capArr[i] = pictures.images[i].caption;
+  }
+
   let lbClass = "";
 
   if (window.screen.width >= 1280) {
@@ -25,7 +30,12 @@ function Lightbox({ pictures }) {
         width="100%"
         className={lbClass}
       />
-      <FsLightbox toggler={toggler} sources={imgArr} thumbs={null} />
+      <FsLightbox
+        toggler={toggler}
+        sources={imgArr}
+        captions={capArr}
+        showThumbsOnMount={true}
+      />
     </>
   );
 }

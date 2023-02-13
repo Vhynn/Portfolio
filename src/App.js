@@ -1,4 +1,3 @@
-import "./App.css";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import AboutMe from "./components/AboutMe";
 import GalleryTabs from "./components/GalleryTabs";
