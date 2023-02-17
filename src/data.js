@@ -3,14 +3,14 @@ const prepath = "https://s3.amazonaws.com/vhyn.dev/images/";
 export const tabList = {
   tabs: [
     {
-      id: "dioramas",
-      title: "Dioramas",
+      id: "necrons",
+      title: "Necrons",
       type: "tab",
       a11yProps: 0,
     },
     {
-      id: "necrons",
-      title: "Necrons",
+      id: "dioramas",
+      title: "Dioramas",
       type: "tab",
       a11yProps: 1,
     },
@@ -42,91 +42,9 @@ export const tabList = {
 };
 
 export const tabItems = {
-  dioramas: {
-    description: undefined,
-    a11yProps: 0,
-    items: [
-      {
-        id: "desertDemon",
-        type: "tabItem",
-        title: "Demon In The Desert",
-        display: prepath + "dioramas/desertDemon.jpg",
-        images: [
-          {
-            id: "desertDemon1",
-            img: prepath + "dioramas/desertDemon1.jpg",
-            alt: "Front view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon2",
-            img: prepath + "dioramas/desertDemon2.jpg",
-            alt: "Side view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon3",
-            img: prepath + "dioramas/desertDemon3.jpg",
-            alt: "Back view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon4",
-            img: prepath + "dioramas/desertDemon4.jpg",
-            alt: "Side view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon5",
-            img: prepath + "dioramas/desertDemon5.jpg",
-            alt: "Upper view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-        ],
-      },
-      {
-        id: "gobbridge",
-        type: "tabItem",
-        title: "Bridge Goblin",
-        display: prepath + "dioramas/gobbridge.jpg",
-        images: [
-          {
-            id: "gobbridge1",
-            img: prepath + "dioramas/gobbridge1.jpg",
-            alt: "Front view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge2",
-            img: prepath + "dioramas/gobbridge2.jpg",
-            alt: "Side view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge3",
-            img: prepath + "dioramas/gobbridge3.jpg",
-            alt: "Back view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge4",
-            img: prepath + "dioramas/gobbridge4.jpg",
-            alt: "Side view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge5",
-            img: prepath + "dioramas/gobbridge5.jpg",
-            alt: "Upper view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-        ],
-      },
-    ],
-  },
   necrons: {
     description: undefined,
-    a11yProps: 1,
+    a11yProps: 0,
     items: [
       {
         id: "nwarriors",
@@ -563,6 +481,88 @@ export const tabItems = {
             img: prepath + "necrons/nlord4.jpg",
             alt: "",
             caption: <h3>Necron Lord</h3>,
+          },
+        ],
+      },
+    ],
+  },
+  dioramas: {
+    description: undefined,
+    a11yProps: 1,
+    items: [
+      {
+        id: "desertDemon",
+        type: "tabItem",
+        title: "Demon In The Desert",
+        display: prepath + "dioramas/desertDemon.jpg",
+        images: [
+          {
+            id: "desertDemon1",
+            img: prepath + "dioramas/desertDemon1.jpg",
+            alt: "Front view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon2",
+            img: prepath + "dioramas/desertDemon2.jpg",
+            alt: "Side view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon3",
+            img: prepath + "dioramas/desertDemon3.jpg",
+            alt: "Back view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon4",
+            img: prepath + "dioramas/desertDemon4.jpg",
+            alt: "Side view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon5",
+            img: prepath + "dioramas/desertDemon5.jpg",
+            alt: "Upper view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+        ],
+      },
+      {
+        id: "gobbridge",
+        type: "tabItem",
+        title: "Bridge Goblin",
+        display: prepath + "dioramas/gobbridge.jpg",
+        images: [
+          {
+            id: "gobbridge1",
+            img: prepath + "dioramas/gobbridge1.jpg",
+            alt: "Front view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge2",
+            img: prepath + "dioramas/gobbridge2.jpg",
+            alt: "Side view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge3",
+            img: prepath + "dioramas/gobbridge3.jpg",
+            alt: "Back view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge4",
+            img: prepath + "dioramas/gobbridge4.jpg",
+            alt: "Side view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge5",
+            img: prepath + "dioramas/gobbridge5.jpg",
+            alt: "Upper view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
           },
         ],
       },

@@ -1,33 +1,20 @@
 import { Box, Drawer, Paper } from "@mui/material";
 
 const DonovanImage = () => {
-  if (window.screen.width <= 1280) {
-    return (
-      <img
-        src={require("./images/DonovanAndFlowers.jpeg")}
-        alt="Donovan and flowers"
-        style={{
-          maxWidth: "257px",
-          height: "auto",
-          width: "100%",
-          marginLeft: "10%",
-        }}
-      />
-    );
-  } else {
-    return (
-      <img
-        src={require("./images/DonovanAndFlowers.jpeg")}
-        alt="Donovan and flowers"
-        style={{
-          maxWidth: "257px",
-          height: "auto",
-          width: "100%",
-        }}
-      />
-    );
-  }
+  return (
+    <img
+      src={require("./images/DonovanAndFlowers.jpeg")}
+      alt="Donovan and flowers"
+      style={{
+        maxWidth: "257px",
+        height: "auto",
+        width: "100%",
+        marginLeft: "10%",
+      }}
+    />
+  );
 };
+
 
 export default function AboutMe() {
   return (

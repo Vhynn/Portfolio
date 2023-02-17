@@ -12,7 +12,7 @@ export default function Gallery({ galleryProp }) {
 
   return (
     <Box sx={{ overflowY: "scroll", overflowX: "visible" }}>
-      <ImageList variant="masonry" cols={cols} gap={15}>
+      <ImageList variant="masonry" cols={cols} gap={8}>
         {galleryProp.items.map((item) => (
           <Lightbox pictures={item} key={item.id} />
         ))}
