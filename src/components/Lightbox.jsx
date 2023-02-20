@@ -28,6 +28,7 @@ function Lightbox({ pictures }) {
         alt={pictures.images[0].alt}
         onClick={() => setToggler(!toggler)}
         width="100%"
+        height="100%"
         className={lbClass}
       />
       <FsLightbox
