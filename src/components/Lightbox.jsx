@@ -15,22 +15,65 @@ function Lightbox({ pictures }) {
     capArr[i] = pictures.images[i].caption;
   }
 
-  let lbClass = "";
-
-  if (window.screen.width >= 1280) {
-    lbClass = "zoomHover";
+  if (window.screen.width <= 1280) {
+    return (
+      <>
+        <img
+          src={pictures.display}
+          alt={pictures.images[0].alt}
+          onClick={() => setToggler(!toggler)}
+          width="100%"
+          height="100%"
+          className="zoomHover"
+          position="absolute"
+        />
+        <FsLightbox
+          toggler={toggler}
+          sources={imgArr}
+          captions={capArr}
+          showThumbsOnMount={true}
+        />
+      </>
+    );
   }
 
   return (
     <>
-      <img
-        src={pictures.display}
-        alt={pictures.images[0].alt}
-        onClick={() => setToggler(!toggler)}
-        width="100%"
-        height="100%"
-        className={lbClass}
-      />
+      <div
+        sx={{
+          position: "relative",
+          maxHeight: "100%",
+          maxWidth: "100%",
+        }}
+        className="lbDiv"
+      >
+        <img
+          src={pictures.display}
+          alt={pictures.images[0].alt}
+          onClick={() => setToggler(!toggler)}
+          width="100%"
+          height="100%"
+          className="zoomHover"
+          position="absolute"
+        />
+        <div className="vanish">
+          <img
+            src={pictures.images[1].img}
+            alt={pictures.images[0].alt}
+            width="100%"
+            height="100%"
+            sx={{
+              position: "absolute",
+              top: "0",
+              right: "0",
+              left: "0",
+              bottom: "0",
+              objectFit: "contain",
+            }}
+            className="backImg"
+          />
+        </div>
+      </div>
       <FsLightbox
         toggler={toggler}
         sources={imgArr}
