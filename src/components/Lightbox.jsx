@@ -48,7 +48,7 @@ function Lightbox({ pictures }) {
         className="lbDiv"
       >
         <img
-          src={pictures.display}
+          src={pictures.display[0]}
           alt={pictures.images[0].alt}
           onClick={() => setToggler(!toggler)}
           width="100%"
@@ -58,7 +58,7 @@ function Lightbox({ pictures }) {
         />
         <div className="vanish">
           <img
-            src={pictures.images[1].img}
+            src={pictures.display[1]}
             alt={pictures.images[0].alt}
             width="100%"
             height="100%"

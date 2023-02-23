@@ -50,7 +50,10 @@ export const tabItems = {
         id: "nwarriors",
         type: "tabItem",
         title: "Necron Warriors",
-        display:prepath + "necrons/nwarriors.jpg",
+        display: [
+          prepath + "necrons/nwarriors.jpg",
+          prepath + "necrons/nwarriors00.jpg",
+        ],
         images: [
           {
             id: "nwarriors01",
@@ -136,7 +139,10 @@ export const tabItems = {
         id: "reanim",
         type: "tabItem",
         title: "Necron Reanimator",
-        display: prepath + "necrons/reanim.jpg",
+        display: [
+          prepath + "necrons/reanim.jpg",
+          prepath + "necrons/reanim0.jpg",
+        ],
         images: [
           {
             id: "reanim1",
@@ -168,7 +174,10 @@ export const tabItems = {
         id: "skorpekh",
         type: "tabItem",
         title: "Necron Skorpekh Destroyers",
-        display: prepath + "necrons/skorpekh.jpg",
+        display: [
+          prepath + "necrons/skorpekh.jpg",
+          prepath + "necrons/skorpekh00.jpg",
+        ],
         images: [
           {
             id: "skorpekh01",
@@ -248,7 +257,10 @@ export const tabItems = {
         id: "plascyte",
         type: "tabItem",
         title: "Necron Plasmacyte",
-        display: prepath + "necrons/plascyte.jpg",
+        display: [
+          prepath + "necrons/plascyte.jpg",
+          prepath + "necrons/plascyte0.jpg",
+        ],
         images: [
           {
             id: "plascyte4",
@@ -280,7 +292,10 @@ export const tabItems = {
         id: "crythral",
         type: "tabItem",
         title: "Necron Cryptothralls",
-        display: prepath + "necrons/crythral.jpg",
+        display: [
+          prepath + "necrons/crythral.jpg",
+          prepath + "necrons/crythral0.jpg",
+        ],
         images: [
           {
             id: "crythral1",
@@ -312,7 +327,10 @@ export const tabItems = {
         id: "onwarriors",
         type: "tabItem",
         title: "Necron Warriors Old",
-        display: prepath + "necrons/onwarriors.jpg",
+        display: [
+          prepath + "necrons/onwarriors.jpg",
+          prepath + "necrons/onwarriors00.jpg",
+        ],
         images: [
           {
             id: "onwarriors01",
@@ -424,7 +442,10 @@ export const tabItems = {
         id: "nmortal",
         type: "tabItem",
         title: "Necron Immortals",
-        display: prepath + "necrons/nmortal.jpg",
+        display: [
+          prepath + "necrons/nmortal.jpg",
+          prepath + "necrons/nmortal0.jpg",
+        ],
         images: [
           {
             id: "nmortal1",
@@ -456,7 +477,7 @@ export const tabItems = {
         id: "nlord",
         type: "tabItem",
         title: "Necron Lord",
-        display: prepath + "necrons/nlord.jpg",
+        display: [prepath + "necrons/nlord.jpg", prepath + "necrons/nlord.jpg"],
         images: [
           {
             id: "nlord1",
@@ -494,7 +515,10 @@ export const tabItems = {
         id: "desertDemon",
         type: "tabItem",
         title: "Demon In The Desert",
-        display: prepath + "dioramas/desertDemon.jpg",
+        display: [
+          prepath + "dioramas/desertDemon.jpg",
+          prepath + "dioramas/desertDemon0.jpg",
+        ],
         images: [
           {
             id: "desertDemon1",
@@ -532,7 +556,10 @@ export const tabItems = {
         id: "gobbridge",
         type: "tabItem",
         title: "Bridge Goblin",
-        display: prepath + "dioramas/gobbridge.jpg",
+        display: [
+          prepath + "dioramas/gobbridge.jpg",
+          prepath + "dioramas/gobbridge.jpg",
+        ],
         images: [
           {
             id: "gobbridge1",
@@ -576,7 +603,10 @@ export const tabItems = {
         id: "sphleetFrig",
         type: "tabItem",
         title: "Sphleet Frigate",
-        display: prepath + "spaceships/sphleetFrig.jpg",
+        display: [
+          prepath + "spaceships/sphleetFrig.jpg",
+          prepath + "spaceships/sphleetFrig0.jpg",
+        ],
         images: [
           {
             id: "sphleetFrig1",
@@ -608,7 +638,10 @@ export const tabItems = {
         id: "sphleetDrop",
         type: "tabItem",
         title: "Sphleet Dropship",
-        display: prepath + "spaceships/sphleetDrop.jpg",
+        display: [
+          prepath + "spaceships/sphleetDrop.jpg",
+          prepath + "spaceships/sphleetDrop0.jpg",
+        ],
         images: [
           {
             id: "sphleetDrop1",
@@ -640,7 +673,10 @@ export const tabItems = {
         id: "sphleetCorvette",
         type: "tabItem",
         title: "Sphleet Corvette",
-        display: prepath + "spaceships/sphleetCorvette.jpg",
+        display: [
+          prepath + "spaceships/sphleetCorvette.jpg",
+          prepath + "spaceships/sphleetCorvette0.jpg",
+        ],
         images: [
           {
             id: "sphleetCorvette1",
@@ -666,7 +702,10 @@ export const tabItems = {
         id: "sphleetCruiser",
         type: "tabItem",
         title: "Sphleet Cruiser",
-        display: prepath + "spaceships/sphleetCruiser.jpg",
+        display: [
+          prepath + "spaceships/sphleetCruiser.jpg",
+          prepath + "spaceships/sphleetCruiser0.jpg",
+        ],
         images: [
           {
             id: "sphleetCruiser1",
@@ -686,7 +725,10 @@ export const tabItems = {
         id: "sphleetBCruiser",
         type: "tabItem",
         title: "Sphleet Battle Cruiser",
-        display: prepath + "spaceships/sphleetBCruiser.jpg",
+        display: [
+          prepath + "spaceships/sphleetBCruiser.jpg",
+          prepath + "spaceships/sphleetBCruiser0.jpg",
+        ],
         images: [
           {
             id: "sphleetBCruiser1",
@@ -718,7 +760,10 @@ export const tabItems = {
         id: "sphleetLcruiser",
         type: "tabItem",
         title: "Sphleet Light Cruiser",
-        display: prepath + "spaceships/sphleetLcruiser.jpg",
+        display: [
+          prepath + "spaceships/sphleetLcruiser.jpg",
+          prepath + "spaceships/sphleetLcruiser0.jpg",
+        ],
         images: [
           {
             id: "sphleetLcruiser1",
@@ -744,7 +789,10 @@ export const tabItems = {
         id: "sphleetBShip",
         type: "tabItem",
         title: "Sphleet Battle Ship",
-        display: prepath + "spaceships/sphleetBship.jpg",
+        display: [
+          prepath + "spaceships/sphleetBShip.jpg",
+          prepath + "spaceships/sphleetBShip0.jpg",
+        ],
         images: [
           {
             id: "sphleetBShip1",
@@ -770,7 +818,10 @@ export const tabItems = {
         id: "nurgthirster",
         type: "tabItem",
         title: "Infected Bloodthirster",
-        display: prepath + "otherminis/nurgthirster.jpg",
+        display: [
+          prepath + "otherminis/nurgthirster.jpg",
+          prepath + "otherminis/nurgthirster0.jpg",
+        ],
         images: [
           {
             id: "nurgthirster1",
@@ -802,7 +853,10 @@ export const tabItems = {
         id: "mimic",
         type: "tabItem",
         title: "Buff Mimic",
-        display: prepath + "otherminis/mimic.jpg",
+        display: [
+          prepath + "otherminis/mimic.jpg",
+          prepath + "otherminis/mimic0.jpg",
+        ],
         images: [
           {
             id: "mimic1",
@@ -834,7 +888,10 @@ export const tabItems = {
         id: "achRun",
         type: "tabItem",
         title: "ACH! RUN!",
-        display: prepath + "otherminis/achRun.jpg",
+        display: [
+          prepath + "otherminis/achRun.jpg",
+          prepath + "otherminis/achRun0.jpg",
+        ],
         images: [
           {
             id: "achRun1",
@@ -860,7 +917,10 @@ export const tabItems = {
         id: "nurgle",
         type: "tabItem",
         title: "Lesser Unclean One",
-        display: prepath + "otherminis/nurgle.jpg",
+        display: [
+          prepath + "otherminis/nurgle.jpg",
+          prepath + "otherminis/nurgle0.jpg",
+        ],
         images: [
           {
             id: "nurgle1",
@@ -892,7 +952,10 @@ export const tabItems = {
         id: "gobs",
         type: "tabItem",
         title: "Teal Goblins",
-        display: prepath + "otherminis/gobs.jpg",
+        display: [
+          prepath + "otherminis/gobs.jpg",
+          prepath + "otherminis/gobs0.jpg",
+        ],
         images: [
           {
             id: "gobs1",
@@ -924,7 +987,10 @@ export const tabItems = {
         id: "greedGobGod",
         type: "tabItem",
         title: "Goblin Incarnate Of Greed",
-        display: prepath + "otherminis/greedGobGod.jpg",
+        display: [
+          prepath + "otherminis/greedGobGod.jpg",
+          prepath + "otherminis/greedGobGod0.jpg",
+        ],
         images: [
           {
             id: "greedGobGod1",
@@ -956,7 +1022,10 @@ export const tabItems = {
         id: "ratScouts",
         type: "tabItem",
         title: "Red Scouts",
-        display: prepath + "otherminis/ratScouts.jpg",
+        display: [
+          prepath + "otherminis/ratScouts.jpg",
+          prepath + "otherminis/ratScouts0.jpg",
+        ],
         images: [
           {
             id: "ratScouts1",
@@ -982,7 +1051,10 @@ export const tabItems = {
         id: "ratKing",
         type: "tabItem",
         title: "The Red King",
-        display: prepath + "otherminis/ratKing.jpg",
+        display: [
+          prepath + "otherminis/ratKing.jpg",
+          prepath + "otherminis/ratKing0.jpg",
+        ],
         images: [
           {
             id: "ratKing1",
@@ -1014,7 +1086,10 @@ export const tabItems = {
         id: "ratKnights",
         type: "tabItem",
         title: "Red King's Guard",
-        display: prepath + "otherminis/ratKnights.jpg",
+        display: [
+          prepath + "otherminis/ratKnights.jpg",
+          prepath + "otherminis/ratKnights0.jpg",
+        ],
         images: [
           {
             id: "ratKnights1",
@@ -1046,7 +1121,10 @@ export const tabItems = {
         id: "ratPriests",
         type: "tabItem",
         title: "Red Brood Zealots",
-        display: prepath + "otherminis/ratPriests.jpg",
+        display: [
+          prepath + "otherminis/ratPriests.jpg",
+          prepath + "otherminis/ratPriests0.jpg",
+        ],
         images: [
           {
             id: "ratPriests1",
@@ -1084,7 +1162,10 @@ export const tabItems = {
         id: "meFace",
         type: "tabItem",
         title: "Casting Of My Own Face",
-        display: prepath + "otherprojects/meFace.jpg",
+        display: [
+          prepath + "otherprojects/meFace.jpg",
+          prepath + "otherprojects/meFace0.jpg",
+        ],
         images: [
           {
             id: "meFace1",
@@ -1116,7 +1197,10 @@ export const tabItems = {
         id: "reaching",
         type: "tabItem",
         title: "Reaching",
-        display: prepath + "otherprojects/reaching.jpg",
+        display: [
+          prepath + "otherprojects/reaching.jpg",
+          prepath + "otherprojects/reaching0.jpg",
+        ],
         images: [
           {
             id: "reaching1",
@@ -1154,7 +1238,10 @@ export const tabItems = {
         id: "wildFlower",
         type: "tabItem",
         title: "Wild Flowers",
-        display: prepath + "photography/wildFlower.jpg",
+        display: [
+          prepath + "photography/wildFlower.jpg",
+          prepath + "photography/wildFlower0.jpg",
+        ],
         images: [
           {
             id: "wildFlower1",
@@ -1186,7 +1273,10 @@ export const tabItems = {
         id: "hBird",
         type: "tabItem",
         title: "Humming Birds",
-        display: prepath + "photography/hBird.jpg",
+        display: [
+          prepath + "photography/hBird.jpg",
+          prepath + "photography/hBird0.jpg",
+        ],
         images: [
           {
             id: "hBird1",
@@ -1206,7 +1296,10 @@ export const tabItems = {
         id: "texField",
         type: "tabItem",
         title: "Texas Fields",
-        display: prepath + "photography/texField.jpg",
+        display: [
+          prepath + "photography/texField.jpg",
+          prepath + "photography/texField0.jpg",
+        ],
         images: [
           {
             id: "texField1",
