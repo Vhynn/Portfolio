@@ -410,7 +410,10 @@ export const tabItems = {
         id: "trayn",
         type: "tabItem",
         title: "Trazyn The Infinite",
-        display: prepath + "necrons/trayn.jpg",
+        display: [
+          prepath + "necrons/trayn.jpg",
+          prepath + "necrons/trayn0.jpg",
+        ],
         images: [
           {
             id: "trayn1",
@@ -558,7 +561,7 @@ export const tabItems = {
         title: "Bridge Goblin",
         display: [
           prepath + "dioramas/gobbridge.jpg",
-          prepath + "dioramas/gobbridge.jpg",
+          prepath + "dioramas/gobbridge0.jpg",
         ],
         images: [
           {
