@@ -480,7 +480,10 @@ export const tabItems = {
         id: "nlord",
         type: "tabItem",
         title: "Necron Lord",
-        display: [prepath + "necrons/nlord.jpg", prepath + "necrons/nlord.jpg"],
+        display: [
+          prepath + "necrons/nlord.jpg",
+          prepath + "necrons/nlord0.jpg",
+        ],
         images: [
           {
             id: "nlord1",

@@ -56,23 +56,21 @@ function Lightbox({ pictures }) {
           className="zoomHover"
           position="absolute"
         />
-        <div className="vanish">
-          <img
-            src={pictures.display[1]}
-            alt={pictures.images[0].alt}
-            width="100%"
-            height="100%"
-            sx={{
-              position: "absolute",
-              top: "0",
-              right: "0",
-              left: "0",
-              bottom: "0",
-              objectFit: "contain",
-            }}
-            className="backImg"
-          />
-        </div>
+        <img
+          src={pictures.display[1]}
+          alt={pictures.images[0].alt}
+          width="100%"
+          height="100%"
+          sx={{
+            position: "absolute",
+            top: "0",
+            right: "0",
+            left: "0",
+            bottom: "0",
+            objectFit: "contain",
+          }}
+          className="backImg"
+        />
       </div>
       <FsLightbox
         toggler={toggler}
