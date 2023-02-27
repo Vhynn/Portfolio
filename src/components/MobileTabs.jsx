@@ -68,21 +68,40 @@ export default function MobileTabs({ props }) {
             borderColor: "divider",
           }}
         >
-          {props.tabs.map((item) => (
-            <Tab
-              key={item.id}
-              sx={{ fontWeight: "bold" }}
-              label={item.title}
-              {...a11yProps(item.a11yProps)}
-            />
-          ))}
+          {props.tabs.map((item) =>
+            item.type === "tab" ? (
+              <Tab
+                key={item.id}
+                sx={{ fontWeight: "bold" }}
+                label={item.title}
+                {...a11yProps(item.a11yProps)}
+              />
+            ) : (
+              item.childTabs.map((item) => (
+                <Tab
+                  key={item.id}
+                  sx={{ fontWeight: "bold" }}
+                  label={item.title}
+                  {...a11yProps(item.a11yProps)}
+                />
+              ))
+            )
+          )}
         </Tabs>
       </MobileDrawer>
-      {props.tabs.map((item) => (
-        <TabPanel key={item.id} value={value} index={item.a11yProps}>
-          <Gallery galleryProp={tabItems[item.id]} />
-        </TabPanel>
-      ))}
+      {props.tabs.map((item) =>
+        item.type === "tab" ? (
+          <TabPanel key={item.id} value={value} index={item.a11yProps}>
+            <Gallery galleryProp={tabItems[item.id]} />
+          </TabPanel>
+        ) : (
+          item.childTabs.map((item) => (
+            <TabPanel key={item.id} value={value} index={item.a11yProps}>
+              <Gallery galleryProp={tabItems[item.id]} />
+            </TabPanel>
+          ))
+        )
+      )}
     </Box>
   );
 }

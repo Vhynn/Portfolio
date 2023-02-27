@@ -9,10 +9,10 @@ import Box from "@mui/material/Box";
 import Gallery from "./Gallery";
 import lightTheme from "../themes/lightTheme";
 import { tabItems } from "../data";
-import SubGalleryTabs from "./SubGalleryTabs";
+import "./SubGalleryStyle.css";
 
 function TabPanel(props) {
-  const { children, value, index, pad, ...other } = props;
+  const { children, value, index, ...other } = props;
 
   return (
     <div
@@ -23,7 +23,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: pad }}>
+        <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -44,7 +44,7 @@ function a11yProps(index) {
   };
 }
 
-export default function GalleryTabs({ props }) {
+export default function SubGalleryTabs({ props }) {
   const theme = lightTheme;
   const [value, setValue] = React.useState(0);
 
@@ -58,15 +58,10 @@ export default function GalleryTabs({ props }) {
   // };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", overflow: "scroll" }}>
-      <AppBar
-        position="sticky"
-        sx={{
-          borderBottomWidth: "2px",
-          borderBottomStyle: "solid",
-          borderBottomColor: "#121f40c2",
-        }}
-      >
+    <Box
+      sx={{ bgcolor: "background.paper", overflow: "scroll", padding: "0px" }}
+    >
+      <AppBar position="sticky" sx={{ backgroundColor: "#162b5e" }}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -74,8 +69,11 @@ export default function GalleryTabs({ props }) {
           textColor="inherit"
           variant="fullWidth"
           aria-label="Gallery Tabs"
+          padding="0px"
+          style={{ height: "10px" }}
+          className="tabs"
         >
-          {props.tabs.map((item) => (
+          {props.map((item) => (
             <Tab
               key={item.id}
               sx={{ fontWeight: "bold" }}
@@ -85,29 +83,16 @@ export default function GalleryTabs({ props }) {
           ))}
         </Tabs>
       </AppBar>
-      {props.tabs.map((item) =>
-        item.type === "tab" ? (
-          <TabPanel
-            key={item.id}
-            value={value}
-            index={item.a11yProps}
-            dir={theme.direction}
-            pad={3}
-          >
-            <Gallery galleryProp={tabItems[item.id]} />
-          </TabPanel>
-        ) : (
-          <TabPanel
-            key={item.id}
-            value={value}
-            index={item.a11yProps}
-            dir={theme.direction}
-            pad={0}
-          >
-            <SubGalleryTabs props={item.childTabs} />
-          </TabPanel>
-        )
-      )}
+      {props.map((item) => (
+        <TabPanel
+          key={item.id}
+          value={value}
+          index={item.a11yProps}
+          dir={theme.direction}
+        >
+          <Gallery galleryProp={tabItems[item.id]} />
+        </TabPanel>
+      ))}
     </Box>
   );
 }

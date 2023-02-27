@@ -3,40 +3,48 @@ const prepath = "https://s3.amazonaws.com/vhyn.dev/images/";
 export const tabList = {
   tabs: [
     {
-      id: "necrons",
-      title: "Necrons",
-      type: "tab",
+      id: "miniatures",
+      title: "Miniatures",
+      type: "superTab",
       a11yProps: 0,
-    },
-    {
-      id: "dioramas",
-      title: "Dioramas",
-      type: "tab",
-      a11yProps: 1,
-    },
-    {
-      id: "spaceships",
-      title: "Spaceships",
-      type: "tab",
-      a11yProps: 2,
-    },
-    {
-      id: "otherminis",
-      title: "Other Miniatures",
-      type: "tab",
-      a11yProps: 3,
+      childTabs: [
+        {
+          id: "necrons",
+          title: "Necrons",
+          type: "tab",
+          a11yProps: 0,
+        },
+        {
+          id: "dioramas",
+          title: "Dioramas",
+          type: "tab",
+          a11yProps: 1,
+        },
+        {
+          id: "spaceships",
+          title: "Spaceships",
+          type: "tab",
+          a11yProps: 2,
+        },
+        {
+          id: "otherminis",
+          title: "Other Miniatures",
+          type: "tab",
+          a11yProps: 3,
+        },
+      ],
     },
     {
       id: "otherprojects",
       title: "Other Projects",
       type: "tab",
-      a11yProps: 4,
+      a11yProps: 1,
     },
     {
       id: "photography",
       title: "Photography",
       type: "tab",
-      a11yProps: 5,
+      a11yProps: 2,
     },
   ],
 };
