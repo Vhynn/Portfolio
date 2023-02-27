@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Gallery from "./Gallery";
 import { tabItems } from "../data";
 import MobileDrawer from "./MobileDrawer";
+import { Button, Card } from "@mui/material";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -74,29 +75,48 @@ export default function MobileTabs({ props }) {
                 key={item.id}
                 sx={{ fontWeight: "bold" }}
                 label={item.title}
-                {...a11yProps(item.a11yProps)}
+                value={item.dexNum}
+                {...a11yProps(item.dexNum)}
               />
             ) : (
-              item.childTabs.map((item) => (
-                <Tab
-                  key={item.id}
-                  sx={{ fontWeight: "bold" }}
-                  label={item.title}
-                  {...a11yProps(item.a11yProps)}
-                />
-              ))
+              <>
+                <Button sx={{ fontWeight: "bold" }}>{item.title}</Button>
+                <Card sx={{ marginLeft: 2, marginRight: 2 }}>
+                  <Tabs
+                    orientation="vertical"
+                    variant="scrollable"
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="Vertical tabs example"
+                    sx={{
+                      borderRight: 1,
+                      borderColor: "divider",
+                    }}
+                  >
+                    {item.childTabs.map((item) => (
+                      <Tab
+                        key={item.id}
+                        sx={{ fontWeight: "bold" }}
+                        label={item.title}
+                        value={item.dexNum}
+                        {...a11yProps(item.dexNum)}
+                      />
+                    ))}
+                  </Tabs>
+                </Card>
+              </>
             )
           )}
         </Tabs>
       </MobileDrawer>
       {props.tabs.map((item) =>
         item.type === "tab" ? (
-          <TabPanel key={item.id} value={value} index={item.a11yProps}>
+          <TabPanel key={item.id} value={value} index={item.dexNum}>
             <Gallery galleryProp={tabItems[item.id]} />
           </TabPanel>
         ) : (
           item.childTabs.map((item) => (
-            <TabPanel key={item.id} value={value} index={item.a11yProps}>
+            <TabPanel key={item.id} value={value} index={item.dexNum}>
               <Gallery galleryProp={tabItems[item.id]} />
             </TabPanel>
           ))
