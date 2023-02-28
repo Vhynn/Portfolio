@@ -44,9 +44,9 @@ function a11yProps(index) {
   };
 }
 
-export default function GalleryTabs({ props }) {
+export default function GalleryTabs({ props, topValue, subValue }) {
   const theme = lightTheme;
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(topValue);
 
   const handleChange = (event, newValue) => {
     console.log(event);
@@ -104,7 +104,7 @@ export default function GalleryTabs({ props }) {
             dir={theme.direction}
             pad={0}
           >
-            <SubGalleryTabs props={item.childTabs} />
+            <SubGalleryTabs props={item.childTabs} newValue={subValue} />
           </TabPanel>
         )
       )}

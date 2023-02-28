@@ -7,6 +7,8 @@ import lightTheme from "./themes/lightTheme";
 import { Fragment } from "react";
 import { tabList } from "./data";
 import MobileTabs from "./components/MobileTabs";
+import LandingPage from "./components/LandinPage";
+import ContentDisplay from "./components/ContentDisplay";
 
 function App() {
   if (window.screen.width <= 1280) {
@@ -29,7 +31,7 @@ function App() {
             <Grid2 container spacing={0} sx={{ backgroundColor: "#EFECE9" }}>
               <Grid2 xs={9} height="100vh" overflow="scroll">
                 <ThemeProvider theme={lightTheme}>
-                  <GalleryTabs props={tabList} />
+                  <ContentDisplay />
                 </ThemeProvider>
               </Grid2>
               <Grid2 xs={3}>

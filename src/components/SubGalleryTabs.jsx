@@ -44,9 +44,9 @@ function a11yProps(index) {
   };
 }
 
-export default function SubGalleryTabs({ props }) {
+export default function SubGalleryTabs({ props, newValue }) {
   const theme = lightTheme;
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(newValue);
 
   const handleChange = (event, newValue) => {
     console.log(event);
