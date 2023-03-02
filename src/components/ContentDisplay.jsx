@@ -1,17 +1,20 @@
 import { tabList } from "../data";
 import GalleryTabs from "./GalleryTabs";
-import LandingPage from "./LandinPage";
+import LandingPage from "./LandingPage";
 import React, { useState } from "react";
+import { Box, Button } from "@mui/material";
 
 const ContentDisplay = () => {
   const [elementVisible, setElementVisible] = useState(false);
   const [topGalleryValue, setTopGalleryValue] = useState(0);
   const [subGalleryValue, setSubGalleryValue] = useState(0);
 
-  const HandleGalleryClick = () => {
-    setElementVisible(!elementVisible);
-    setTopGalleryValue(0);
-    setSubGalleryValue(3);
+  const HandleGalleryClick = (MainTab, SubTab) => {
+    if (MainTab !== null) {
+      setElementVisible(!elementVisible);
+      setTopGalleryValue(MainTab);
+      setSubGalleryValue(SubTab);
+    }
   };
 
   return (
@@ -23,13 +26,19 @@ const ContentDisplay = () => {
             topValue={topGalleryValue}
             subValue={subGalleryValue}
           />
+          <Box textAlign="center">
+            <Button
+              variant="contained"
+              sx={{ marginBottom: "20px", width: "7vw" }}
+              onClick={() => setElementVisible(!elementVisible)}
+            >
+              HOME
+            </Button>
+          </Box>
         </div>
       ) : (
         <div className="Landing--Page">
-          <LandingPage />
-          <button title="Show Element" onClick={HandleGalleryClick}>
-            TEST
-          </button>
+          <LandingPage handleClick={HandleGalleryClick} />
         </div>
       )}
     </>

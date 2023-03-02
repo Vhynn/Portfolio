@@ -2,12 +2,12 @@ import { Card, ImageList, Paper, ThemeProvider } from "@mui/material";
 import darkTheme from "../themes/darkTheme";
 import "./GalleryPreview.css";
 
-const GalleryPreview = () => {
+const GalleryPreview = ({ handleClick, gallery }) => {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
         <Card sx={{ m: 7 }}>
-          <div width="100%" className="FlexDiv">
+          <div width="100%" className="FlexDiv" display="flex !important">
             <Paper
               className="Gallery--Button"
               id="ForceTransition"
@@ -15,9 +15,12 @@ const GalleryPreview = () => {
                 backgroundImage:
                   "linear-gradient(rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.12))",
               }}
+              onClick={() =>
+                handleClick(gallery.parentValue, gallery.a11yProps)
+              }
             >
               <div className="Title--Bar">
-                <h3>NECRONS</h3>
+                <h3>{gallery.title}</h3>
               </div>
               <ImageList
                 cols={3}
@@ -29,7 +32,7 @@ const GalleryPreview = () => {
                 }}
               >
                 <img
-                  src="https://styles.redditmedia.com/t5_23x4ug/styles/communityIcon_i1d3rmkama551.png"
+                  src={gallery.icons[0]}
                   alt=""
                   width="120px"
                   height="auto"
@@ -37,14 +40,14 @@ const GalleryPreview = () => {
                   className="Thumb--Gallery"
                 />
                 <img
-                  src="https://styles.redditmedia.com/t5_23x4ug/styles/communityIcon_i1d3rmkama551.png"
+                  src={gallery.icons[1]}
                   alt=""
                   width="120px"
                   height="auto"
                   className="Thumb--Gallery"
                 />
                 <img
-                  src="https://styles.redditmedia.com/t5_23x4ug/styles/communityIcon_i1d3rmkama551.png"
+                  src={gallery.icons[2]}
                   alt=""
                   width="120px"
                   height="auto"
@@ -53,8 +56,7 @@ const GalleryPreview = () => {
               </ImageList>
             </Paper>
             <p className="Description" width="50%" float="right">
-              Example text that will eventually be a description of the gallery
-              that is being displayed
+              {gallery.caption}
             </p>
           </div>
         </Card>

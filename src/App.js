@@ -7,7 +7,7 @@ import lightTheme from "./themes/lightTheme";
 import { Fragment } from "react";
 import { tabList } from "./data";
 import MobileTabs from "./components/MobileTabs";
-import LandingPage from "./components/LandinPage";
+import LandingPage from "./components/LandingPage";
 import ContentDisplay from "./components/ContentDisplay";
 
 function App() {
