@@ -7,9 +7,18 @@
   font-size: medium;
 }
 
+.Description__Mobile {
+  margin: 30px;
+  font-size: small;
+}
 .Thumb--Gallery {
   margin: 10px;
   margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.Thumb--Gallery__Mobile {
+  margin: 20px;
   border-radius: 5px;
 }
 
@@ -22,6 +31,14 @@
     linear-gradient(rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.12));
 }
 
+.Gallery--Button__Mobile {
+  margin: 30px;
+  width: auto;
+  padding-top: 0;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.12));
+}
 #ForceTransition {
   transition: all 0.5s
 }

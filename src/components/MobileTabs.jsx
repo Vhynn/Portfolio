@@ -42,8 +42,8 @@ function a11yProps(index) {
   };
 }
 
-export default function MobileTabs({ props }) {
-  const [value, setValue] = React.useState(0);
+export default function MobileTabs({ props, galleryValue }) {
+  const [value, setValue] = React.useState(galleryValue);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
