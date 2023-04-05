@@ -4,9 +4,28 @@
 
 .Description {
   margin: 5%;
-  font-size: medium;
+  font-size: small;
+    letter-spacing: 1.5px;
+  }
+  
+  .Descriptor--Box {
+    width: 35%;
+  }
+  
+  .Thumbnail--Box {
+    text-align: center;
+    width: 65%;
+  }
+  
+  .Title {
+    margin-left: 5%;
+    letter-spacing: 1.5px;
 }
 
+.Title:hover {
+  color: #204396;
+  cursor: pointer;
+}
 .Description__Mobile {
   margin: 30px;
   font-size: small;
@@ -14,12 +33,16 @@
 .Thumb--Gallery {
   margin: 10px;
   margin-bottom: 0px;
-  border-radius: 5px;
+  transition: all 0.5s;
+  }
+  
+  .Thumb--Gallery:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .Thumb--Gallery__Mobile {
   margin: 20px;
-  border-radius: 5px;
 }
 
 .Gallery--Button {

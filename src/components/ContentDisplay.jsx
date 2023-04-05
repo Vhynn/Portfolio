@@ -29,7 +29,12 @@ const ContentDisplay = () => {
           <Box textAlign="center">
             <Button
               variant="contained"
-              sx={{ marginBottom: "20px", width: "7vw" }}
+              size="small"
+              sx={{
+                marginBottom: "20px",
+                width: "7vw",
+                letterSpacing: "1.5px",
+              }}
               onClick={() => setElementVisible(!elementVisible)}
             >
               HOME

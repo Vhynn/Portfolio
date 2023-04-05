@@ -15,6 +15,21 @@ const DonovanImage = () => {
   );
 };
 
+const GithubIcon = () => {
+  return (
+    <a href="https://github.com/Vhynn">
+      <img
+        src={require("./images/GithubIcon.png")}
+        alt="Github Logo"
+        style={{
+          maxWidth: "50px",
+          height: "auto",
+          margin: "10px",
+        }}
+      />
+    </a>
+  );
+};
 
 export default function AboutMe() {
   return (
@@ -44,8 +59,10 @@ export default function AboutMe() {
           paddingTop: 0.5,
         }}
       >
-        <Box sx={{ paddingLeft: 5.3 }}>
-          <h2 align="left"> HI, I'M DONOVAN</h2>
+        <Box sx={{ paddingLeft: "35px", letterSpacing: "1.5px" }}>
+          <h2 align="left" letterSpacing="1.5px">
+            HI, I'M DONOVAN
+          </h2>
         </Box>
         <DonovanImage />
       </Paper>
@@ -55,7 +72,8 @@ export default function AboutMe() {
           padding: 6,
           paddingTop: 1,
           paddingBottom: 0,
-          letterSpacing: 2,
+          paddingLeft: "43px",
+          letterSpacing: 1.5,
           fontSize: "small",
           height: "100vh",
         }}
@@ -64,14 +82,15 @@ export default function AboutMe() {
         <div align="left">
           <p width="50%">
             This is a website made by me to show some of the things I've done.
-            Mostly I've just painted miniatures and made dioramas but I've
-            slowly been branching out into more things lately. Right now you can
-            see pictures of some of the projects I've finished as well as photos
+            Mostly just painted miniatures and made dioramas but I've slowly
+            been branching out into more things lately. Right now you can see
+            pictures of some of the projects I've finished as well as photos
             I've taken and enjoy, though I'm by no means a talented
-            photographer. I plan on keeping this site updated as I work on more
+            photographer. My plan is to keep this site updated as I work on more
             projects so feel free to check back if you're interested, and thanks
             for stopping by!
           </p>
+          <GithubIcon />
         </div>
       </Paper>
     </Drawer>

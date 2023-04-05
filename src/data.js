@@ -22,7 +22,7 @@ export const tabList = {
             prepath + "necrons/necron2.ico",
           ],
           caption:
-            "These miniatures all belong to a tabletop game called Warhammer 40k, a game where silly space armies fight eachother. I've not played the game in over ten years but I've been invested in the lore and the miniatures since I was a child. These Necrons are really the only army I've been collecting over the years and it's been fun to slowly accumulate more and more miniatures that all look cohesive and belong to the same group. I don't know how well it shows, but I consider these minis to generally represent my highest effort in mini painting relative to whenever I painted them.",
+            "These miniatures all belong to a tabletop game called Warhammer 40k, a game where silly space armies fight eachother. I've not played the game in over ten years but I've been invested in the lore and the miniatures since my younger years. These Necrons are really the only faction I've been collecting over the years and it's been fun to slowly accumulate more and more miniatures that all share a cohesive look.",
         },
         {
           id: "dioramas",
@@ -37,7 +37,7 @@ export const tabList = {
             "",
           ],
           caption:
-            "Making full dioramas is only something I've gotten in to fairly recently and as such I've not compleated very many, though I have a ton of ideas to tackle at some point. Making full scenes is very enjoyable. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to fully depict something without needing as intense of sculpting skills which allows me more expression without the pressure and difficulty that might come with attempting to sculpt a full miniature.",
+            "Making full dioramas is something I've gotten in to fairly recently, as such I've not finished many, though I have a ton of ideas to tackle at some point. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to depict an idea without needing much sculpting skill as sculpting a miniature might take, which allows more expression with less pressure and difficuly.",
         },
         {
           id: "spaceships",
@@ -52,7 +52,7 @@ export const tabList = {
             prepath + "spaceships/spaceship2.ico",
           ],
           caption:
-            "Here is a collection of spaceships I've painted up with the intention of playing a tabletop game called Dropfleet Commander (though I've yet to actually play.) Other than just spaceships I want to eventually also make some in scale space debris and other props to go with them. In my brain there is a mad future plan to fully make a sculpted topographical map (like you might see in a museum) with a sheet of clear acrilic over top that you could play the game on to make it feel like the ships are in combat in low orbit over a planet.",
+            "Here is a collection of spaceships I've painted up with the intention of playing a tabletop game called Dropfleet Commander. Other than just spaceships I want to eventually also make some in scale space debris and other props to go with them. In my brain there is a mad future plan to fully make a sculpted topographical map (like you might see in a museum) with a sheet of clear acrilic over top.",
         },
         {
           id: "otherminis",
@@ -99,7 +99,7 @@ export const tabList = {
         prepath + "photography/photo2.ico",
       ],
       caption:
-        "Various photography I like enough to upload. I originally only got a nice camera to take better pictures of miniatures but I figured that since I have it it might be fun to try and take nice photos when I'm out and about. Don't expect anything amazing, it's a very casual hobby for me and a lot of the time I really only take photos with the intent of using them as referance for future diorama scenes or paint schemes.",
+        "Various photos I liked enough to upload. I originally only got a nice camera to take better pictures of miniatures but I figured that since I have it it might be fun to try and take nice photos when I'm out and about. Don't expect anything amazing, it's a very casual hobby for me and a lot of the time I really only take photos with the intent of using them as referance.",
     },
   ],
 };
