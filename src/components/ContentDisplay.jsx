@@ -30,11 +30,13 @@ const ContentDisplay = () => {
             <Button
               variant="contained"
               size="small"
-              sx={{
-                marginBottom: "20px",
-                width: "7vw",
-                letterSpacing: "1.5px",
-              }}
+                sx={{
+                  letterSpacing: "1.5px",
+                  fontSize: "x-small",
+                  alignContent: "center",
+                  margin: "15px",
+                  float: "center",
+                }}
               onClick={() => setElementVisible(!elementVisible)}
             >
               HOME

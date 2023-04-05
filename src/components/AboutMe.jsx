@@ -17,7 +17,7 @@ const DonovanImage = () => {
 
 const GithubIcon = () => {
   return (
-    <a href="https://github.com/Vhynn">
+    <a href="https://github.com/Vhynn/portfolio">
       <img
         src={require("./images/GithubIcon.png")}
         alt="Github Logo"

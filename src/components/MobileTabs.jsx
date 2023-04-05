@@ -73,14 +73,25 @@ export default function MobileTabs({ props, galleryValue }) {
             item.type === "tab" ? (
               <Tab
                 key={item.id}
-                sx={{ fontWeight: "bold" }}
+                sx={{
+                  fontWeight: "bold",
+                  letterSpacing: "1.5px",
+                }}
                 label={item.title}
                 value={item.dexNum}
                 {...a11yProps(item.dexNum)}
               />
             ) : (
               <>
-                <Button sx={{ fontWeight: "bold" }}>{item.title}</Button>
+                <Button
+                  sx={{
+                    fontWeight: "bold",
+                    letterSpacing: "1.5px",
+                    color: "#707070",
+                  }}
+                >
+                  {item.title}
+                </Button>
                 <Card sx={{ marginLeft: 2, marginRight: 2 }}>
                   <Tabs
                     orientation="vertical"
@@ -96,7 +107,7 @@ export default function MobileTabs({ props, galleryValue }) {
                     {item.childTabs.map((item) => (
                       <Tab
                         key={item.id}
-                        sx={{ fontWeight: "bold" }}
+                        sx={{ fontWeight: "bold", letterSpacing: "1.5px" }}
                         label={item.title}
                         value={item.dexNum}
                         {...a11yProps(item.dexNum)}

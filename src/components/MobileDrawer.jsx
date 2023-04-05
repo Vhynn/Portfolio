@@ -54,6 +54,7 @@ export default function MobileDrawer({ children }) {
           >
             <Button
               onClick={toggleDrawer("left", true)}
+              sx={{ letterSpacing: "1.5px" }}
               backgroundColor="#121212"
               variant="contained"
               href="#contained-buttons"
@@ -62,6 +63,7 @@ export default function MobileDrawer({ children }) {
             </Button>
             <Button
               onClick={toggleDrawer("right", true)}
+              sx={{ letterSpacing: "1.5px" }}
               backgroundColor="#121212"
               variant="contained"
               href="#contained-buttons"

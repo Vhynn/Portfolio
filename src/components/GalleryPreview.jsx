@@ -7,15 +7,17 @@ const GalleryPreview = ({ handleClick, gallery }) => {
     <>
       {window.screen.width <= 1280 ? (
         <ThemeProvider theme={darkTheme}>
-          <Card sx={{ m: 2, marginBottom: "28px", marginTop: "28px" }}>
+          <Card
+            sx={{
+              m: 2,
+              marginBottom: "14px",
+              marginTop: "14px",
+              textAlign: "center",
+            }}
+          >
             <div width="100%">
-              <Paper
-                className="Gallery--Button__Mobile"
-                id="ForceTransition"
-                sx={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 0.12))",
-                }}
+              <h3
+                className="Title"
                 onClick={() =>
                   handleClick(
                     gallery.parentValue,
@@ -24,29 +26,50 @@ const GalleryPreview = ({ handleClick, gallery }) => {
                   )
                 }
               >
-                <div className="Title--Bar">
-                  <h3>{gallery.title}</h3>
-                </div>
+                <u>{gallery.title.toUpperCase()}</u>
+              </h3>
 
+              {gallery.icons.slice(0, 2).map((item) => (
                 <img
-                  src={gallery.icons[0]}
+                  src={item}
                   alt=""
-                  width="120px"
+                  width="160px"
                   height="auto"
                   display="block"
-                  className="Thumb--Gallery__Mobile"
+                  className="Thumb--Gallery"
+                  onClick={() =>
+                    handleClick(
+                      gallery.parentValue,
+                      gallery.a11yProps,
+                      gallery.dexNum
+                    )
+                  }
                 />
-                <img
-                  src={gallery.icons[1]}
-                  alt=""
-                  width="120px"
-                  height="auto"
-                  className="Thumb--Gallery__Mobile"
-                />
-              </Paper>
+              ))}
+
               <p className="Description__Mobile" width="50%" float="right">
                 {gallery.caption}
               </p>
+              <Button
+                onClick={() =>
+                  handleClick(
+                    gallery.parentValue,
+                    gallery.a11yProps,
+                    gallery.dexNum
+                  )
+                }
+                variant="contained"
+                size="small"
+                sx={{
+                  letterSpacing: "1.5px",
+                  fontSize: "x-small",
+                  alignContent: "center",
+                  margin: "15px",
+                  float: "center",
+                }}
+              >
+                View Gallery
+              </Button>
             </div>
           </Card>
         </ThemeProvider>

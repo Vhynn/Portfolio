@@ -23,7 +23,14 @@ const MobileContentDisplay = () => {
           <Box textAlign="center">
             <Button
               variant="contained"
-              sx={{ marginBottom: "20px", width: "7vw" }}
+              size="small"
+              sx={{
+                letterSpacing: "1.5px",
+                fontSize: "x-small",
+                alignContent: "center",
+                margin: "15px",
+                float: "center",
+              }}
               onClick={() => setElementVisible(!elementVisible)}
             >
               HOME
