@@ -1,12 +1,11 @@
 import Grid2 from "@mui/material/Unstable_Grid2";
 import AboutMe from "./components/AboutMe";
-import GalleryTabs from "./components/GalleryTabs";
 import { ThemeProvider } from "@mui/material";
 import darkTheme from "./themes/darkTheme.js";
 import lightTheme from "./themes/lightTheme";
 import { Fragment } from "react";
-import { tabList } from "./data";
-import MobileTabs from "./components/MobileTabs";
+import ContentDisplay from "./components/ContentDisplay";
+import MobileContentDisplay from "./components/MobileContentDisplay";
 
 function App() {
   if (window.screen.width <= 1280) {
@@ -15,7 +14,7 @@ function App() {
         <ThemeProvider theme={darkTheme}>
           <Fragment>
             <ThemeProvider theme={lightTheme}>
-              <MobileTabs props={tabList} />
+              <MobileContentDisplay />
             </ThemeProvider>
           </Fragment>
         </ThemeProvider>
@@ -29,7 +28,7 @@ function App() {
             <Grid2 container spacing={0} sx={{ backgroundColor: "#EFECE9" }}>
               <Grid2 xs={9} height="100vh" overflow="scroll">
                 <ThemeProvider theme={lightTheme}>
-                  <GalleryTabs props={tabList} />
+                  <ContentDisplay />
                 </ThemeProvider>
               </Grid2>
               <Grid2 xs={3}>

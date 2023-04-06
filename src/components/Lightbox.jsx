@@ -19,13 +19,11 @@ function Lightbox({ pictures }) {
     return (
       <>
         <img
-          src={pictures.display}
+          src={pictures.display[0]}
           alt={pictures.images[0].alt}
           onClick={() => setToggler(!toggler)}
           width="100%"
           height="100%"
-          className="zoomHover"
-          position="absolute"
         />
         <FsLightbox
           toggler={toggler}

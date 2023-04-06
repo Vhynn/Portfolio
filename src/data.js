@@ -3,40 +3,103 @@ const prepath = "https://s3.amazonaws.com/vhyn.dev/images/";
 export const tabList = {
   tabs: [
     {
-      id: "necrons",
-      title: "Necrons",
-      type: "tab",
+      id: "miniatures",
+      title: "Miniatures",
+      type: "superTab",
+      parentValue: 0,
       a11yProps: 0,
-    },
-    {
-      id: "dioramas",
-      title: "Dioramas",
-      type: "tab",
-      a11yProps: 1,
-    },
-    {
-      id: "spaceships",
-      title: "Spaceships",
-      type: "tab",
-      a11yProps: 2,
-    },
-    {
-      id: "otherminis",
-      title: "Other Miniatures",
-      type: "tab",
-      a11yProps: 3,
+      childTabs: [
+        {
+          id: "necrons",
+          title: "Necrons",
+          type: "tab",
+          parentValue: 0,
+          a11yProps: 0,
+          dexNum: 0,
+          icons: [
+            prepath + "necrons/necron0.ico",
+            prepath + "necrons/necron1.ico",
+            prepath + "necrons/necron2.ico",
+          ],
+          caption:
+            "These miniatures all belong to a tabletop game called Warhammer 40k, a game where silly space armies fight eachother. I've not played the game in over ten years but I've been invested in the lore and the miniatures since my younger years. These Necrons are really the only faction I've been collecting over the years and it's been fun to slowly accumulate more and more miniatures that all share a cohesive look.",
+        },
+        {
+          id: "dioramas",
+          title: "Dioramas",
+          type: "tab",
+          parentValue: 0,
+          a11yProps: 1,
+          dexNum: 1,
+          icons: [
+            prepath + "dioramas/diorama0.ico",
+            prepath + "dioramas/diorama1.ico",
+            "",
+          ],
+          caption:
+            "Making full dioramas is something I've gotten in to fairly recently, as such I've not finished many, though I have a ton of ideas to tackle at some point. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to depict an idea without needing much sculpting skill as sculpting a miniature might take, which allows more expression with less pressure and difficuly.",
+        },
+        {
+          id: "spaceships",
+          title: "Spaceships",
+          type: "tab",
+          parentValue: 0,
+          a11yProps: 2,
+          dexNum: 2,
+          icons: [
+            prepath + "spaceships/spaceship0.ico",
+            prepath + "spaceships/spaceship1.ico",
+            prepath + "spaceships/spaceship2.ico",
+          ],
+          caption:
+            "Here is a collection of spaceships I've painted up with the intention of playing a tabletop game called Dropfleet Commander. Other than just spaceships I want to eventually also make some in scale space debris and other props to go with them. In my brain there is a mad future plan to fully make a sculpted topographical map (like you might see in a museum) with a sheet of clear acrilic over top.",
+        },
+        {
+          id: "otherminis",
+          title: "Other Miniatures",
+          type: "tab",
+          parentValue: 0,
+          a11yProps: 3,
+          dexNum: 3,
+          icons: [
+            prepath + "otherminis/othermini0.ico",
+            prepath + "otherminis/othermini1.ico",
+            prepath + "otherminis/othermini2.ico",
+          ],
+          caption:
+            "These are all the various other miniatures that I have painted (and am happy enough with to actually post pictures of online.) There's no real cohesive theme and usually I just paint what I want without thinking too much about it. Some minis in here are related but I didn't feel they deserved a full gallery to themselves for various reasons.",
+        },
+      ],
     },
     {
       id: "otherprojects",
       title: "Other Projects",
       type: "tab",
-      a11yProps: 4,
+      parentValue: 1,
+      a11yProps: 1,
+      dexNum: 4,
+      icons: [
+        prepath + "otherprojects/otherproject0.ico",
+        prepath + "otherprojects/otherproject1.ico",
+        "",
+      ],
+      caption:
+        "Non miniature art or art-like projects I've worked on. Right now there's not much to show but only recently have I been exploring things outside of specifically miniatures. Prop making is a big one that seems like something enjoyable though there are no props to actually show just yet. Hopefully soon that will change, though I've been telling myself that for a while.",
     },
     {
       id: "photography",
       title: "Photography",
       type: "tab",
-      a11yProps: 5,
+      parentValue: 2,
+      a11yProps: 2,
+      dexNum: 5,
+      icons: [
+        prepath + "photography/photo0.ico",
+        prepath + "photography/photo1.ico",
+        prepath + "photography/photo2.ico",
+      ],
+      caption:
+        "Various photos I liked enough to upload. I originally only got a nice camera to take better pictures of miniatures but I figured that since I have it it might be fun to try and take nice photos when I'm out and about. Don't expect anything amazing, it's a very casual hobby for me and a lot of the time I really only take photos with the intent of using them as referance.",
     },
   ],
 };
