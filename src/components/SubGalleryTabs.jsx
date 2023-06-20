@@ -58,9 +58,7 @@ export default function SubGalleryTabs({ props, newValue }) {
   // };
 
   return (
-    <Box
-      sx={{ bgcolor: "background.paper", overflow: "scroll", padding: "0px" }}
-    >
+    <Box sx={{ bgcolor: "background.paper", overflow: "auto", padding: "0px" }}>
       <AppBar position="sticky" sx={{ backgroundColor: "#162b5e" }}>
         <Tabs
           value={value}

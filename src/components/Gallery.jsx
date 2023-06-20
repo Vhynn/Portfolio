@@ -11,7 +11,7 @@ export default function Gallery({ galleryProp }) {
   }
 
   return (
-    <Box sx={{ overflowY: "scroll", overflowX: "hidden" }}>
+    <Box sx={{ overflowY: "auto", overflowX: "hidden" }}>
       <ImageList
         variant="masonry"
         cols={cols}

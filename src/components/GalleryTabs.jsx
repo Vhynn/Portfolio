@@ -10,7 +10,6 @@ import Gallery from "./Gallery";
 import lightTheme from "../themes/lightTheme";
 import { tabItems } from "../data";
 import SubGalleryTabs from "./SubGalleryTabs";
-import "./GalleryTabs.css";
 
 function TabPanel(props) {
   const { children, value, index, pad, ...other } = props;
@@ -59,7 +58,7 @@ export default function GalleryTabs({ props, topValue, subValue }) {
   // };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", overflow: "scroll" }}>
+    <Box sx={{ bgcolor: "background.paper", overflow: "auto" }}>
       <AppBar
         position="sticky"
         sx={{

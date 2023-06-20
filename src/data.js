@@ -17,9 +17,9 @@ export const tabList = {
           a11yProps: 0,
           dexNum: 0,
           icons: [
-            prepath + "necrons/necron0.ico",
-            prepath + "necrons/necron1.ico",
-            prepath + "necrons/necron2.ico",
+            prepath + "necrons/necron0.jpg",
+            prepath + "necrons/necron1.jpg",
+            prepath + "necrons/necron2.jpg",
           ],
           caption:
             "These miniatures all belong to a tabletop game called Warhammer 40k, a game where silly space armies fight eachother. I've not played the game in over ten years but I've been invested in the lore and the miniatures since my younger years. These Necrons are really the only faction I've been collecting over the years and it's been fun to slowly accumulate more and more miniatures that all share a cohesive look.",
@@ -32,8 +32,8 @@ export const tabList = {
           a11yProps: 1,
           dexNum: 1,
           icons: [
-            prepath + "dioramas/diorama0.ico",
-            prepath + "dioramas/diorama1.ico",
+            prepath + "dioramas/diorama0.jpg",
+            prepath + "dioramas/diorama1.jpg",
             "",
           ],
           caption:
@@ -47,9 +47,9 @@ export const tabList = {
           a11yProps: 2,
           dexNum: 2,
           icons: [
-            prepath + "spaceships/spaceship0.ico",
-            prepath + "spaceships/spaceship1.ico",
-            prepath + "spaceships/spaceship2.ico",
+            prepath + "spaceships/spaceship0.jpg",
+            prepath + "spaceships/spaceship1.jpg",
+            prepath + "spaceships/spaceship2.jpg",
           ],
           caption:
             "Here is a collection of spaceships I've painted up with the intention of playing a tabletop game called Dropfleet Commander. Other than just spaceships I want to eventually also make some in scale space debris and other props to go with them. In my brain there is a mad future plan to fully make a sculpted topographical map (like you might see in a museum) with a sheet of clear acrilic over top.",
@@ -62,9 +62,9 @@ export const tabList = {
           a11yProps: 3,
           dexNum: 3,
           icons: [
-            prepath + "otherminis/othermini0.ico",
-            prepath + "otherminis/othermini1.ico",
-            prepath + "otherminis/othermini2.ico",
+            prepath + "otherminis/othermini0.jpg",
+            prepath + "otherminis/othermini1.jpg",
+            prepath + "otherminis/othermini2.jpg",
           ],
           caption:
             "These are all the various other miniatures that I have painted (and am happy enough with to actually post pictures of online.) There's no real cohesive theme and usually I just paint what I want without thinking too much about it. Some minis in here are related but I didn't feel they deserved a full gallery to themselves for various reasons.",
@@ -79,8 +79,8 @@ export const tabList = {
       a11yProps: 1,
       dexNum: 4,
       icons: [
-        prepath + "otherprojects/otherproject0.ico",
-        prepath + "otherprojects/otherproject1.ico",
+        prepath + "otherprojects/otherproject0.jpg",
+        prepath + "otherprojects/otherproject1.jpg",
         "",
       ],
       caption:
@@ -94,9 +94,9 @@ export const tabList = {
       a11yProps: 2,
       dexNum: 5,
       icons: [
-        prepath + "photography/photo0.ico",
-        prepath + "photography/photo1.ico",
-        prepath + "photography/photo2.ico",
+        prepath + "photography/photo0.jpg",
+        prepath + "photography/photo1.jpg",
+        prepath + "photography/photo2.jpg",
       ],
       caption:
         "Various photos I liked enough to upload. I originally only got a nice camera to take better pictures of miniatures but I figured that since I have it it might be fun to try and take nice photos when I'm out and about. Don't expect anything amazing, it's a very casual hobby for me and a lot of the time I really only take photos with the intent of using them as referance.",
