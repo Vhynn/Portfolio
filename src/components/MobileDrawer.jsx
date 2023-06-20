@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material";
 import darkTheme from "../themes/darkTheme";
 import AboutMe from "./AboutMe";
 import Stack from "@mui/material/Stack";
+import "./MobileDrawer.css";
 
 export default function MobileDrawer({ children }) {
   const [state, setState] = React.useState({
@@ -84,7 +85,9 @@ export default function MobileDrawer({ children }) {
             onClose={toggleDrawer("right", false)}
             width="50vh"
           >
-            <AboutMe></AboutMe>
+            <div className="AboutMe">
+              <AboutMe></AboutMe>
+            </div>
           </Drawer>
         </React.Fragment>
       </ThemeProvider>

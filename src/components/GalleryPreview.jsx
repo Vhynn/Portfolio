@@ -1,4 +1,4 @@
-import { Button, Card, ImageList, Paper, ThemeProvider } from "@mui/material";
+import { Button, Card, ImageList, ThemeProvider } from "@mui/material";
 import darkTheme from "../themes/darkTheme";
 import "./GalleryPreview.css";
 
@@ -33,7 +33,7 @@ const GalleryPreview = ({ handleClick, gallery }) => {
                 <img
                   src={item}
                   alt=""
-                  width="160px"
+                  width="140px"
                   height="auto"
                   display="block"
                   className="Thumb--Gallery"

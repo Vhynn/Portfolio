@@ -37,7 +37,7 @@ export const tabList = {
             "",
           ],
           caption:
-            "Making full dioramas is something I've gotten in to fairly recently, as such I've not finished many, though I have a ton of ideas to tackle at some point. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to depict an idea without needing much sculpting skill as sculpting a miniature might take, which allows more expression with less pressure and difficuly.",
+            "Making full dioramas is something I've gotten in to fairly recently, as such I've not finished many, though I have a ton of ideas to tackle at some point. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to depict an idea without needing much skill as sculpting a miniature might take, which allows more expression with less pressure and difficuly.",
         },
         {
           id: "spaceships",
