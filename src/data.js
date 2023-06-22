@@ -22,7 +22,7 @@ export const tabList = {
             prepath + "necrons/necron2.jpg",
           ],
           caption:
-            "These miniatures all belong to a tabletop game called Warhammer 40k, a game where silly space armies fight eachother. I've not played the game in over ten years but I've been invested in the lore and the miniatures since my younger years. These Necrons are really the only faction I've been collecting over the years and it's been fun to slowly accumulate more and more miniatures that all share a cohesive look.",
+            "These miniatures belong to a tabletop game called Warhammer 40k, which features silly space armies battling each other. Although I haven't played the game in over ten years, I've remained engaged with the lore and the miniatures since I started. Collecting Necrons has been my primary focus over the years, and it's been enjoyable to gradually amass a larger collection of miniatures that have a cohesive appearance.",
         },
         {
           id: "dioramas",
@@ -37,7 +37,7 @@ export const tabList = {
             "",
           ],
           caption:
-            "Making full dioramas is something I've gotten in to fairly recently, as such I've not finished many, though I have a ton of ideas to tackle at some point. Rather than just slightly modifying a mini and painting it up, dioramas give me more creative freedom to depict an idea without needing much skill as sculpting a miniature might take, which allows more expression with less pressure and difficuly.",
+            "I'm new to diorama making and haven't completed many yet, but I've got plenty of ideas for future exploration. I appreciate dioramas for their ability to create evocative scenes, and they feel more accessible to me due to the reduced emphasis on intricate sculpting, unlike the fine detail work required for sculpting miniatures. That being said, I still have a strong interest in sculpting miniatures in the future!",
         },
         {
           id: "spaceships",
@@ -52,7 +52,7 @@ export const tabList = {
             prepath + "spaceships/spaceship2.jpg",
           ],
           caption:
-            "Here is a collection of spaceships I've painted up with the intention of playing a tabletop game called Dropfleet Commander. Other than just spaceships I want to eventually also make some in scale space debris and other props to go with them. In my brain there is a mad future plan to fully make a sculpted topographical map (like you might see in a museum) with a sheet of clear acrilic over top.",
+            "This is a collection of painted spaceships intended for the tabletop game Dropfleet Commander. In the future, my goals include painting up another fleet and creating in-scale space terrain such as debris. Additionally, I have an ambitious plan for the future to construct a fully sculpted topographical map and overlay it with clear acrylic, creating a simulated low orbit environment.",
         },
         {
           id: "otherminis",
@@ -67,7 +67,7 @@ export const tabList = {
             prepath + "otherminis/othermini2.jpg",
           ],
           caption:
-            "These are all the various other miniatures that I have painted (and am happy enough with to actually post pictures of online.) There's no real cohesive theme and usually I just paint what I want without thinking too much about it. Some minis in here are related but I didn't feel they deserved a full gallery to themselves for various reasons.",
+            "Unlike my themed galleries, this collection features an eclectic mix of unrelated miniatures that I am most happy with. The motivations behind painting them vary, including practicing techniques, experimenting with less used color palettes, having pieces for board games, or simply finding the sculpts appealing. While some miniatures in this gallery may be related, I didn't think it necessary to create separate galleries for them.",
         },
       ],
     },
@@ -84,7 +84,7 @@ export const tabList = {
         "",
       ],
       caption:
-        "Non miniature art or art-like projects I've worked on. Right now there's not much to show but only recently have I been exploring things outside of specifically miniatures. Prop making is a big one that seems like something enjoyable though there are no props to actually show just yet. Hopefully soon that will change, though I've been telling myself that for a while.",
+        "Here are some art or art-like projects beyond miniatures. I'm currently in the early stages of exploring other mediums, so I don't have much to showcase yet. However, I have a particular interest in prop making and look forward to sharing my work in the near future!",
     },
     {
       id: "photography",
@@ -99,7 +99,7 @@ export const tabList = {
         prepath + "photography/photo2.jpg",
       ],
       caption:
-        "Various photos I liked enough to upload. I originally only got a nice camera to take better pictures of miniatures but I figured that since I have it it might be fun to try and take nice photos when I'm out and about. Don't expect anything amazing, it's a very casual hobby for me and a lot of the time I really only take photos with the intent of using them as referance.",
+        "Here are a few photos I enjoyed enough to upload. Initially, I purchased a nice camera to capture better pictures of miniatures, but I also had fun experimenting with photography while exploring different settings. Please note that this is just a casual hobby for me, so don't expect anything extraordinary. I mostly take photos for reference purposes.",
     },
   ],
 };

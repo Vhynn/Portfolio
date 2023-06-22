@@ -81,14 +81,14 @@ export default function AboutMe() {
         <h3 align="left">I LIKE TO MAKE THINGS. </h3>
         <div align="left">
           <p width="50%">
-            This is a website made by me to show some of the things I've done.
-            Mostly just painted miniatures and made dioramas but I've slowly
-            been branching out into more things lately. Right now you can see
-            pictures of some of the projects I've finished as well as photos
-            I've taken and enjoy, though I'm by no means a talented
-            photographer. My plan is to keep this site updated as I work on more
-            projects so feel free to check back if you're interested, and thanks
-            for stopping by!
+            This website is a gallery created by me to showcase some of my
+            various art projects, mainly in the form of painted miniatures and
+            dioramas. However, I've also been exploring other mediums lately.
+            You can browse through pictures of the completed projects as well as
+            some of my favorite photos, though I should mention I am by no means
+            a talented photographer. I plan to consistently update this site as
+            I complete projects, so feel free to come back and check for updates
+            if you're interested. Thanks for visiting!
           </p>
           <GithubIcon />
         </div>
