@@ -10,12 +10,27 @@ export const tabList = {
       a11yProps: 0,
       childTabs: [
         {
-          id: "necrons",
-          title: "Necrons",
+          id: "dioramas",
+          title: "Dioramas",
           type: "tab",
           parentValue: 0,
           a11yProps: 0,
           dexNum: 0,
+          icons: [
+            prepath + "dioramas/diorama0.jpg",
+            prepath + "dioramas/diorama1.jpg",
+            prepath + "dioramas/diorama2.jpg",
+          ],
+          caption:
+            "I'm new to diorama making and haven't completed many yet, but I've got plenty of ideas for future exploration. I appreciate dioramas for their ability to create evocative scenes, and they feel more accessible to me due to the reduced emphasis on intricate sculpting, unlike the fine detail work required for sculpting miniatures. That being said, I still have a strong interest in sculpting miniatures in the future!",
+        },
+        {
+          id: "necrons",
+          title: "Necrons",
+          type: "tab",
+          parentValue: 0,
+          a11yProps: 1,
+          dexNum: 1,
           icons: [
             prepath + "necrons/necron0.jpg",
             prepath + "necrons/necron1.jpg",
@@ -23,21 +38,6 @@ export const tabList = {
           ],
           caption:
             "These miniatures belong to a tabletop game called Warhammer 40k, which features silly space armies battling each other. Although I haven't played the game in over ten years, I've remained engaged with the lore and the miniatures since I started. Collecting Necrons has been my primary focus over the years, and it's been enjoyable to gradually amass a larger collection of miniatures that have a cohesive appearance.",
-        },
-        {
-          id: "dioramas",
-          title: "Dioramas",
-          type: "tab",
-          parentValue: 0,
-          a11yProps: 1,
-          dexNum: 1,
-          icons: [
-            prepath + "dioramas/diorama0.jpg",
-            prepath + "dioramas/diorama1.jpg",
-            "",
-          ],
-          caption:
-            "I'm new to diorama making and haven't completed many yet, but I've got plenty of ideas for future exploration. I appreciate dioramas for their ability to create evocative scenes, and they feel more accessible to me due to the reduced emphasis on intricate sculpting, unlike the fine detail work required for sculpting miniatures. That being said, I still have a strong interest in sculpting miniatures in the future!",
         },
         {
           id: "spaceships",
@@ -105,9 +105,192 @@ export const tabList = {
 };
 
 export const tabItems = {
-  necrons: {
+  dioramas: {
     description: undefined,
     a11yProps: 0,
+    items: [
+      {
+        id: "desertDemon",
+        type: "tabItem",
+        title: "Demon In The Desert",
+        display: [
+          prepath + "dioramas/desertDemon.jpg",
+          prepath + "dioramas/desertDemon0.jpg",
+        ],
+        images: [
+          {
+            id: "desertDemon1",
+            img: prepath + "dioramas/desertDemon1.jpg",
+            alt: "Front view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon2",
+            img: prepath + "dioramas/desertDemon2.jpg",
+            alt: "Side view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon3",
+            img: prepath + "dioramas/desertDemon3.jpg",
+            alt: "Back view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon4",
+            img: prepath + "dioramas/desertDemon4.jpg",
+            alt: "Side view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+          {
+            id: "desertDemon5",
+            img: prepath + "dioramas/desertDemon5.jpg",
+            alt: "Upper view of Demon In The Desert",
+            caption: <h3>Demon In The Desert</h3>,
+          },
+        ],
+      },
+      {
+        id: "gobbridge",
+        type: "tabItem",
+        title: "Bridge Goblin",
+        display: [
+          prepath + "dioramas/gobbridge.jpg",
+          prepath + "dioramas/gobbridge0.jpg",
+        ],
+        images: [
+          {
+            id: "gobbridge1",
+            img: prepath + "dioramas/gobbridge1.jpg",
+            alt: "Front view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge2",
+            img: prepath + "dioramas/gobbridge2.jpg",
+            alt: "Side view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge3",
+            img: prepath + "dioramas/gobbridge3.jpg",
+            alt: "Back view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge4",
+            img: prepath + "dioramas/gobbridge4.jpg",
+            alt: "Side view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+          {
+            id: "gobbridge5",
+            img: prepath + "dioramas/gobbridge5.jpg",
+            alt: "Upper view of Bridge Goblin",
+            caption: <h3>Bridge Goblin</h3>,
+          },
+        ],
+      },
+      {
+        id: "shrooms",
+        type: "tabItem",
+        title: "Mushroom Forest",
+        display: [
+          prepath + "dioramas/shrooms00.jpg",
+          prepath + "dioramas/shrooms.jpg",
+        ],
+        images: [
+          {
+            id: "shrooms01",
+            img: prepath + "dioramas/shrooms01.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms02",
+            img: prepath + "dioramas/shrooms02.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms03",
+            img: prepath + "dioramas/shrooms03.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms04",
+            img: prepath + "dioramas/shrooms04.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms05",
+            img: prepath + "dioramas/shrooms05.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms06",
+            img: prepath + "dioramas/shrooms06.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms07",
+            img: prepath + "dioramas/shrooms07.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms08",
+            img: prepath + "dioramas/shrooms08.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms09",
+            img: prepath + "dioramas/shrooms09.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms10",
+            img: prepath + "dioramas/shrooms10.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms11",
+            img: prepath + "dioramas/shrooms11.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms12",
+            img: prepath + "dioramas/shrooms12.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms13",
+            img: prepath + "dioramas/shrooms13.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+          {
+            id: "shrooms14",
+            img: prepath + "dioramas/shrooms14.jpg",
+            alt: "",
+            caption: <h3>Mushroom Forest</h3>,
+          },
+        ],
+      },
+    ],
+  },
+  necrons: {
+    description: undefined,
+    a11yProps: 1,
     items: [
       {
         id: "nwarriors",
@@ -571,94 +754,6 @@ export const tabItems = {
             img: prepath + "necrons/nlord4.jpg",
             alt: "",
             caption: <h3>Necron Lord</h3>,
-          },
-        ],
-      },
-    ],
-  },
-  dioramas: {
-    description: undefined,
-    a11yProps: 1,
-    items: [
-      {
-        id: "desertDemon",
-        type: "tabItem",
-        title: "Demon In The Desert",
-        display: [
-          prepath + "dioramas/desertDemon.jpg",
-          prepath + "dioramas/desertDemon0.jpg",
-        ],
-        images: [
-          {
-            id: "desertDemon1",
-            img: prepath + "dioramas/desertDemon1.jpg",
-            alt: "Front view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon2",
-            img: prepath + "dioramas/desertDemon2.jpg",
-            alt: "Side view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon3",
-            img: prepath + "dioramas/desertDemon3.jpg",
-            alt: "Back view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon4",
-            img: prepath + "dioramas/desertDemon4.jpg",
-            alt: "Side view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-          {
-            id: "desertDemon5",
-            img: prepath + "dioramas/desertDemon5.jpg",
-            alt: "Upper view of Demon In The Desert",
-            caption: <h3>Demon In The Desert</h3>,
-          },
-        ],
-      },
-      {
-        id: "gobbridge",
-        type: "tabItem",
-        title: "Bridge Goblin",
-        display: [
-          prepath + "dioramas/gobbridge.jpg",
-          prepath + "dioramas/gobbridge0.jpg",
-        ],
-        images: [
-          {
-            id: "gobbridge1",
-            img: prepath + "dioramas/gobbridge1.jpg",
-            alt: "Front view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge2",
-            img: prepath + "dioramas/gobbridge2.jpg",
-            alt: "Side view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge3",
-            img: prepath + "dioramas/gobbridge3.jpg",
-            alt: "Back view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge4",
-            img: prepath + "dioramas/gobbridge4.jpg",
-            alt: "Side view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
-          },
-          {
-            id: "gobbridge5",
-            img: prepath + "dioramas/gobbridge5.jpg",
-            alt: "Upper view of Bridge Goblin",
-            caption: <h3>Bridge Goblin</h3>,
           },
         ],
       },
