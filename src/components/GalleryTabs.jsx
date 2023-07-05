@@ -58,7 +58,7 @@ export default function GalleryTabs({ props, topValue, subValue }) {
   // };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", overflow: "scroll" }}>
+    <Box sx={{ bgcolor: "background.paper", overflow: "auto" }}>
       <AppBar
         position="sticky"
         sx={{
@@ -74,6 +74,7 @@ export default function GalleryTabs({ props, topValue, subValue }) {
           textColor="inherit"
           variant="fullWidth"
           aria-label="Gallery Tabs"
+          letterSpacing="1.5px"
         >
           {props.tabs.map((item) => (
             <Tab
