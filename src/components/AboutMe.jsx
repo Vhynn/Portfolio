@@ -31,6 +31,22 @@ const GithubIcon = () => {
   );
 };
 
+const LinkedinIcon = () => {
+  return (
+    <a href="https://www.linkedin.com/in/donovan-dillon-463876262/">
+      <img
+        src={require("./images/LinkedinIcon.png")}
+        alt="Linkedin Logo"
+        style={{
+          maxWidth: "30px",
+          height: "auto",
+          margin: "10px",
+        }}
+      />
+    </a>
+  );
+};
+
 export default function AboutMe() {
   return (
     <Drawer
@@ -56,7 +72,7 @@ export default function AboutMe() {
           paddingLeft: 1,
           paddingBottom: 0,
           paddingRight: 1,
-          paddingTop: 0.5,
+          paddingTop: 0,
         }}
       >
         <Box sx={{ paddingLeft: "35px", letterSpacing: "1.5px" }}>
@@ -70,7 +86,7 @@ export default function AboutMe() {
         square={true}
         sx={{
           padding: 6,
-          paddingTop: 1,
+          paddingTop: 0,
           paddingBottom: 0,
           paddingLeft: "43px",
           letterSpacing: 1.5,
@@ -90,7 +106,10 @@ export default function AboutMe() {
             I complete projects, so feel free to come back and check for updates
             if you're interested. Thanks for visiting!
           </p>
-          <GithubIcon />
+          <div>
+            <GithubIcon />
+            <LinkedinIcon />
+          </div>
         </div>
       </Paper>
     </Drawer>
