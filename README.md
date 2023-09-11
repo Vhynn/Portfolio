@@ -4,6 +4,14 @@ This is a portfolio website built from 'create react app' to display some of the
 
 The website itself is currently being hosted through AWS and can be visited at www.vhyn.dev
 
+## Planned Changes
+- I would like to add a gallery for some of the 3d sculpting / modelling I have been doing, with how I've set everything up it should be simple to just add a gallery in the .json data and upload relevant pictures to AWS
+
+- Currently the website is a single page with content that changes, however I have not implemented a system that will allow  'back page' and 'formward page' to work intuitively and I would like to change this
+
+- I would like to refactor the components and styling, I have ended up not using MUI very much and the limitations of the library's components ended up frustrating me and led me to write some, uhh, ugly styling.
+  - Furthermore the code isn't super consistant or readable currently so I would like to write a sort of 'formatting guide' for my code to follow in an attempt to fix this.
+
 ## Functionality
 
 The website is pretty simple as it is really just an image gallery. The tabs at the top will navigate to different galleries sorted by subject. Each gallery is a set of images and each image in a gallery can be clicked to view a larger version of the image housed in a lightbox as well as other images of the same subect that are not viewable from outside of the lightbox. The mobile version of the site is very similar, the only difference is that at the top of the page has two buttons instead of tabs. Then button on the left titled 'Galleries' will open a drawer from the left of the screen that houses the various tabs. The button on the left titled 'About Me' will open a drawer from the right of the screen that houses the about me section.
